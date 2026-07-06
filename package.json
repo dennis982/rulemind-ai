@@ -1,0 +1,23 @@
+{
+  "name": "rulemind-ai",
+  "version": "1.0.0",
+  "description": "RuleMind AI - Enterprise Hybrid Expert System & Generative AI Platform",
+  "private": true,
+  "author": "Dennis Yaotse",
+  "license": "PROPRIETARY",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w frontend & npm run dev -w backend",
+    "build": "npm run build -w frontend && npm run build -w backend",
+    "start": "npm start -w backend",
+    "test": "npm test -w frontend && npm test -w backend",
+    "lint": "npm run lint -w frontend && npm run lint -w backend"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.0"
+  }
+}
